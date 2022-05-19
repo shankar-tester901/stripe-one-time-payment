@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Stripe Onetime Payment/Checkout Catalyst Sample</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js">
+    </script>
+
+    <script src="main.js"></script>
+
+</head>
+
+<body>
+    <div class="sr-root">
+        <div class="sr-main">
+            <section class="container" style="background: antiquewhite;">
+                <div>
+                    <h1>One Time Purchase for Fruitful Studies</h1>
+                    <center>
+                        <h5>The secret of all Indian success </h5>
+                    </center>
+
+                    <div class="pasha-image">
+                        <img src="./scale.jpg" width="120" height="90" />
+                        <input type="text" id="quantity-scale" min="1" value="4" name="scale" />
+                        <input type="text" id="price-scale" value="30" name="scale" />
+                    </div>
+
+                    <div class="pasha-image">
+                        <img src="./belt.jpg" width="120" height="90" />
+                        <input type="text" id="quantity-belt" min="1" value="4" name="belt" />
+                        <input type="text" id="price-belt" value="100" name="belt" />
+                    </div>
+
+                    <div class="pasha-image">
+                        <img src="./shoes.jpg" width="120" height="90" />
+                        <input type="text" id="quantity-shoes" min="1" value="4" name="shoes" />
+                        <input type="text" id="price-shoes" value="2000" name="specs" />
+
+                    </div>
+
+                    <div class="pasha-image">
+                        <img src="./slippers.jpg" width="120" height="90" />
+                        <input type="text" id="quantity-slippers" min="1" value="4" name="slippers" />
+                        <input type="text" id="price-slippers" value="3000" name="specs" />
+
+                    </div>
+
+
+                    <button type="submit" onclick="getData();return false" id="submit">Buy</button>
+
+                </div>
+
+
+
+
+
+            </section>
+        </div>
+
+        <div id="error-message"></div>
+
+        <div id="result-output"></div>
+
+    </div>
+
+
+</body>
+
+</html>

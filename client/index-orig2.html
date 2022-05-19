@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Stripe Onetime Payment/Checkout Catalyst Sample</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js">
+    </script>
+
+    <script src="main.js"></script>
+
+</head>
+
+<body>
+    <div class="sr-root">
+        <div class="sr-main">
+            <section class="container">
+                <div>
+                    <h1>One Time Payment</h1>
+
+                    <div class="pasha-image">
+                        <img src="./specs.jpg" width="140" height="160" />
+                    </div>
+                </div>
+
+                <div class="quantity-setter">
+                    <button class="increment-btn" id="subtract" disabled type="button">-</button>
+                    <input type="number" id="quantity-input" min="1" value="1" name="quantity" />
+                    <button class="increment-btn" id="add" type="button">+</button>
+                </div>
+
+                <p class="sr-legal-text">Number of copies (max 10)</p>
+
+                <button type="submit" onclick="getData();return false" id="submit">Buy</button>
+
+            </section>
+
+            <div id="error-message"></div>
+
+            <div id="result-output"></div>
+
+        </div>
+    </div>
+</body>
+
+</html>
